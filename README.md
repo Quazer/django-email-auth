@@ -57,6 +57,8 @@ urlpatterns = [
 
 ```
 
+A Post request with proper `email` and `password` return a token and the associated user.
+
 ## Support
 
 If you are having issues, please let us know or submit a pull request.
