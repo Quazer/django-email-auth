@@ -58,6 +58,7 @@ class User(AbstractBaseUser, PermissionsMixin):
         ),
     )
     date_joined = models.DateTimeField(_('date joined'), default=timezone.now)
+    date_updated = models.DateTimeField(_('date updated'), auto_now=True)
 
     objects = UserManager()
 
