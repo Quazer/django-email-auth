@@ -1,5 +1,6 @@
 # django-emailauth
-Django User model with email instead of username.
+
+Django 1.10 User model with email instead of username.
 
 This app fully integrates with Group, Permission and Admin.
 
