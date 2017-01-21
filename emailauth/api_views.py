@@ -3,6 +3,7 @@ from rest_framework.authtoken.models import Token
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
+from django.contrib.auth.signals import user_logged_in
 from emailauth.serializers import AuthTokenSerializer, UserSerializer
 
 
