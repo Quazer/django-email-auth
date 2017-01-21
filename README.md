@@ -7,6 +7,8 @@ Django 1.10 User model with email instead of username.
 
 This app fully integrates with Group, Permission and Admin.
 
+It also includes views for django rest framework.
+
 
 ## Installation 
 
@@ -39,6 +41,21 @@ Run migrations :
 
 Your are now good to go !
 
+
+## Django Rest Framework
+
+Once you have installed Django Rest Framework, add the following to your root `urls.py`: 
+
+```python
+from emailauth.api_views import obtain_auth_token
+
+urlpatterns = [
+	...
+	url(r'^api/token', obtain_auth_token),
+    ...
+]
+
+```
 
 ## Support
 
