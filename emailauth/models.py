@@ -80,3 +80,7 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     def __unicode__(self):
         return self.get_full_name()
+
+    def save(self, *args, **kwargs):
+        self.email = self.email.lower()
+        super(User, self).save(*args, **kwargs)

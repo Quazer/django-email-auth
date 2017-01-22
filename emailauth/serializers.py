@@ -12,7 +12,7 @@ class AuthTokenSerializer(serializers.Serializer):
         password = attrs.get('password')
 
         if email and password:
-            user = authenticate(email=email, password=password)
+            user = authenticate(email=email.lower(), password=password)
 
             if user:
                 # From Django 1.10 onwards the `authenticate` call simply
