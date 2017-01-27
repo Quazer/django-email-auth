@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 
 from django import forms
+from django.contrib.auth import password_validation
 from django.contrib.auth.forms import ReadOnlyPasswordHashField
 from django.utils.translation import ugettext, ugettext_lazy as _
 
